@@ -1,0 +1,7 @@
+{
+    "uid": "ar-web-receiver",
+    "append": true,
+    "watch": false,
+    "script": "ar-web-receiver-server.js",
+    "souceDir": "[ProjectFilePath]"
+}

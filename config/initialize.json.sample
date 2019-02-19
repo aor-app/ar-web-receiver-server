@@ -1,0 +1,12 @@
+{
+    "security": {
+        "password":  "password"
+    },
+    "wifi": {
+        "country": "JP",
+        "operationMode": "g",
+        "channel": 1,
+        "ssid": "SSID",
+        "passphrase": "password"
+    }
+}

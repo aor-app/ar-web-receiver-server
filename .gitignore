@@ -1,0 +1,8 @@
+*.*~
+/sessions/*.json
+/hostapd/hostapd_[0-9]*.conf.old
+/hostapd/hostapd.conf
+/config/login.json
+/config/initialize.json
+/forever/server.json
+/node_modules/
