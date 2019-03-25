@@ -211,6 +211,14 @@ router.post('/dcr_encryption_code',  authenticator.authenticate, async (req, res
     const result = await arReceiver.setDCREnqryptionCode(req.body.value);
     res.json(result);
 });
+router.get('/ttcslot',  authenticator.authenticate, async (req, res, next) => {
+    const result = await arReceiver.getTTCSlot();
+    res.json(result);
+});
+router.post('/ttcslot',  authenticator.authenticate, async (req, res, next) => {
+    const result = await arReceiver.setTTCSlot(req.body.value);
+    res.json(result);
+});
 
 module.exports.router = router;
 module.exports.initialize = initialize;
