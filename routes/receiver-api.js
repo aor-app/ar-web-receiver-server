@@ -112,8 +112,8 @@ router.post('/noise_squelch', authenticator.authenticate, async (req, res, next)
     res.json(result);
 });
 
-router.get('/level_squelch', authenticator.authenticate, async (req, res, next) => {
-    const result = await arReceiver.getLevelSquelch();
+router.get('/noise_squelch', authenticator.authenticate, async (req, res, next) => {
+    const result = await arReceiver.getNoiseSquelch();
     res.json(result);
 });
 
