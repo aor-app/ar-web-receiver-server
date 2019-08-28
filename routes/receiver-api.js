@@ -97,6 +97,26 @@ router.get('/digital_data_output', authenticator.authenticate, async (req, res, 
     res.json(result);
 });
 
+router.post('/select_squelch', authenticator.authenticate, async (req, res, next) => {
+    const result = await arReceiver.setSelectSquelch(req.body.value);
+    res.json(result);
+});
+
+router.get('/select_squelch', authenticator.authenticate, async (req, res, next) => {
+    const result = await arReceiver.getSelectSquelch();
+    res.json(result);
+});
+
+router.post('/noise_squelch', authenticator.authenticate, async (req, res, next) => {
+    const result = await arReceiver.setNoiseSquelch(req.body.value);
+    res.json(result);
+});
+
+router.get('/level_squelch', authenticator.authenticate, async (req, res, next) => {
+    const result = await arReceiver.getLevelSquelch();
+    res.json(result);
+});
+
 router.post('/level_squelch', authenticator.authenticate, async (req, res, next) => {
     const result = await arReceiver.setLevelSquelch(req.body.value);
     res.json(result);
